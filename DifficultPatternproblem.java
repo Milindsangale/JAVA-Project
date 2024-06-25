@@ -1,6 +1,6 @@
 public class DifficultPatternproblem {
     public static void main(String[] args) {
-        int n = 50;
+        int n = 25;
 
 
        //upper part
