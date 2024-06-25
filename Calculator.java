@@ -1,35 +1,35 @@
-import java.util.Scanner;
+import java.util.*;
 
- class Calculator {
+public class Main {
     public static void main(String[] args) {
-        Scanner Calculator = new Scanner(System.in);        // Scanner for the Input
-        System.out.println("Enter the value of a : ");    // for print
-        int a = Calculator.nextInt();                      // for input value a
-        System.out.println("Enter the value of b : ");   // for print
-        int b = Calculator.nextInt();                      // for input value b
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
 
+        System.out.println(" 1.Addition \n 2.Substraction \n 3.Multiplication \n 4.Division \n 5. Remainder");
 
-        System.out.println(" 1.Addition \n 2.Subtraction \n 3.Multiplication \n 4.Division ");  //  for Understanding the Sequence of Variable
+        int operator = sc.nextInt();
 
-
-        int Variable = Calculator.nextInt();      // forr Input the Variablr
-
-        switch (Variable) {         // used for Switch 
-            case 1: System.out.println(" Addition : " + (a+b));            // for addition
+        switch (operator){
+            case 1 :
+                System.out.println("Addition : " + (a+b));
                 break;
-            case 2: System.out.println(" Subtraction : " + (a-b));        // for Subtraction
+            case 2 :
+                System.out.println("Substraction : " + (a-b));
                 break;
-            case 3: System.out.println(" Multiplication : " + (a*b));    // for Multiplication 
+            case 3 :
+                System.out.println(" Multiplication :" + (a*b));
                 break;
-            case 4: System.out.println(" Division : " + (a/b) );         // for Division 
+            case 4 :
+                System.out.println(" Division :" + (a/b));
+                break;
+            case 5 :
+                System.out.println(" Remainder :" + (a%b));
                 break;
 
-
-            default:                                                 // for a invalid Syntax
-            System.out.println(" Invalid Variable ");            // for a print 
-                break;                                             // break the Statement 
+            default:
+                System.out.println(" Invalid Operator");
         }
-        
     }
-    
 }
+
