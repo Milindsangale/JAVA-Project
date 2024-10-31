@@ -6,6 +6,16 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
+
+
+
+
+
+
+
+
+
+
         System.out.println(" 1.Addition \n 2.Substraction \n 3.Multiplication \n 4.Division \n 5. Remainder");
 
         int operator = sc.nextInt();
